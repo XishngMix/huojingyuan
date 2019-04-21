@@ -8,7 +8,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '11111111')
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 # SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI', dev_db)
 #SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:Dallasryp123@localhost:8889/huojingyuan'     #mac
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:HJ0527LY@localhost:3306/huojingyuan'   #win
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:HJ0527LY@172.17.98.125:3306/huojingyuan'   #win
 POST_PER_PAGE = 5
 DEBUG = True
 

@@ -23,6 +23,5 @@ RUN  pip3 install -r requirements.txt \
 && rm -rf /etc/nginx/sites-enabled/default \
 && rm -rf /etc/supervisor/supervisord.conf \
 && sed -i 's/nodaemon=false/nodaemon=true/g' /etc/supervisord.conf
-EXPOSE 9002
-EXPOSE 3306
+EXPOSE 9006
 CMD ["supervisord", "-c", "/etc/supervisord.conf"]
