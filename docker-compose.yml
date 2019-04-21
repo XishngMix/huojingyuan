@@ -12,6 +12,6 @@ huojingyuan:
     environment:
      - WORDPRESS_DB_PASSWORD=HJ0527LY
     ports:
-     - "127.0.0.1:9002:9002"
+     - "9006:9006"
     
    
