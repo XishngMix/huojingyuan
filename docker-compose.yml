@@ -1,0 +1,17 @@
+mysql:
+    image: mysql:5.7
+    environment:
+     - MYSQL_ROOT_PASSWORD=HJ0527LY
+     - MYSQL_DATABASE=huojingyuan
+    ports:
+     - "3306:3306"
+huojingyuan:
+    build: .
+    links:
+     - mysql
+    environment:
+     - WORDPRESS_DB_PASSWORD=HJ0527LY
+    ports:
+     - "127.0.0.1:9002:9002"
+    
+   
